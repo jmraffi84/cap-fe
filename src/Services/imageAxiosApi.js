@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = `https://cap-be-0mzm.onrender.com/`;
+const BASE_URL = `https://cap-be-0mzm.onrender.com`;
 
 export const getAllImages = async () => {
     try {
@@ -11,11 +11,11 @@ export const getAllImages = async () => {
         console.log('Response Data:', response.data);
 
         // Access the images array within the data property
-        const imagesData = response.data;
+        const images = response.data;
 
         // Check if images array exists
-        if (imagesData && imagesData.images && Array.isArray(imagesData.images)) {
-            return imagesData.images;
+        if (images && images.images && Array.isArray(images.images)) {
+            return images.images;
         } else {
             console.error('No images data found in the API response.');
             throw new Error('No images data found.');
