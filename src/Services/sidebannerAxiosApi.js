@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = `http://localhost:3001`;
+const BASE_URL = `https://cap-be-0mzm.onrender.com/`;
 
 export const getAllSideImages = async () => {
     try {
