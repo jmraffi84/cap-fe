@@ -70,7 +70,7 @@ const Home = () => {
 
     return (
         <div>
-            <Container style={{ height: '70vh' }}>
+            <Container style={{ height: '70vh', marginTop: "4px" }}>
                 <Carousel showArrows={true}
                     showStatus={false}
                     showThumbs={false}
@@ -86,7 +86,7 @@ const Home = () => {
                             src={image.imageUrl}
                             alt={`Banner ${index + 1}`}
                             style={{
-                                width: '100%', height: '450px', objectFit: 'cover', margin: '3px', // Clear any default margins
+                                width: '100%', height: '450px', objectFit: 'cover', margin: '4px', // Clear any default margins
                                 padding: 0,
                             }}
                         />
